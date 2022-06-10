@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "python-minimal"
+version = "0.1.0"
+description = ""
+authors = ["Barath Kumar <barath.vrittamani@bitwala.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.0"
+
+[tool.poetry.dev-dependencies]
+yapf = "^0.32.0"
+poethepoet = "^0.13.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+start = "poetry run python src/main.py"
